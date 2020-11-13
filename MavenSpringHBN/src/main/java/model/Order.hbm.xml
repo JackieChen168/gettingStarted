@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2020年11月13日 上午12:07:07 by Hibernate Tools 5.4.21.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="festival" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Order" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="order">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="foreign">
+                <param name="property">activity</param>
+            </generator>
+        </id>
+        <one-to-one class="model.Activity" constrained="true" embed-xml="true" name="activity"/>
+        <one-to-one class="model.Customer" constrained="true" embed-xml="true" name="customer"/>
+        <property generated="never" lazy="false" name="customerName" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="CustomerName"/>
+        </property>
+        <property generated="never" lazy="false" name="activityName" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="ActivityName"/>
+        </property>
+        <property generated="never" lazy="false" name="placedDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="PlacedDate"/>
+        </property>
+        <property generated="never" lazy="false" name="price" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="price"/>
+        </property>
+        <property generated="never" lazy="false" name="startDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="startDate"/>
+        </property>
+        <property generated="never" lazy="false" name="endDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="endDate" unique="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

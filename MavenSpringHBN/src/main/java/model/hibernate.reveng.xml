@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+<type-mapping>
+	<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+</type-mapping>
+
+
+
+<table-filter match-catalog="festival" match-name="accommodation"/>
+  <table-filter match-catalog="festival" match-name="activity"/>
+  <table-filter match-catalog="festival" match-name="customer"/>
+  <table-filter match-catalog="festival" match-name="employee"/>
+  <table-filter match-catalog="festival" match-name="guide"/>
+  <table-filter match-catalog="festival" match-name="location"/>
+  <table-filter match-catalog="festival" match-name="order"/>
+  <table-filter match-catalog="festival" match-name="restaurant"/>
+  <table-filter match-catalog="festival" match-name="uesrtable"/>
+</hibernate-reverse-engineering>

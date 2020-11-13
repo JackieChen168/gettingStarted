@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2020年11月13日 上午12:07:07 by Hibernate Tools 5.4.21.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="festival" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Restaurant" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="restaurant">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="Name"/>
+        </property>
+        <property generated="never" lazy="false" name="city" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="City"/>
+        </property>
+        <property generated="never" lazy="false" name="description" optimistic-lock="true" type="string" unique="false">
+            <column length="512" name="Description"/>
+        </property>
+        <property generated="never" lazy="false" name="picture" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="Picture"/>
+        </property>
+        <property generated="never" lazy="false" name="address" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="address"/>
+        </property>
+    </class>
+</hibernate-mapping>

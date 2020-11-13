@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2020年11月13日 上午12:07:07 by Hibernate Tools 5.4.21.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="festival" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Employee" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="employee">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="clerkName" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="clerkName"/>
+        </property>
+        <property generated="never" lazy="false" name="password" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="password"/>
+        </property>
+    </class>
+</hibernate-mapping>
